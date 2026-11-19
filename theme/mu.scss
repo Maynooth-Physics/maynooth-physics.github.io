@@ -1,0 +1,168 @@
+/*
+  Maynooth University Physics — shared site theme
+  ------------------------------------------------
+  Used by the department landing page AND every group site, so keep the
+  copies identical. To change the look everywhere, edit this file here
+  first, then copy it into theme/ in each group site repo.
+
+  Colours are taken from the university crest.
+*/
+
+/*-- scss:defaults --*/
+
+// Crest colours
+$mu-navy:   #1d3a6e;
+$mu-gold:   #f1ab1c;
+$mu-teal:   #116879;
+$mu-maroon: #822328;
+$mu-ink:    #1f2933;   // body text
+$mu-paper:  #f6f7f9;   // light section background
+
+// Bootstrap / Quarto variables
+$primary:   $mu-navy;
+$secondary: $mu-teal;
+$body-color: $mu-ink;
+$link-color: $mu-teal;            // teal on white passes WCAG AA contrast
+$link-hover-color: $mu-navy;
+
+// System font stack: no external font requests (fast, and avoids
+// sending visitor data to third-party font services)
+$font-family-sans-serif: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+$headings-font-weight: 600;
+$headings-color: $mu-navy;
+
+// Navbar
+$navbar-bg: $mu-navy;
+$navbar-fg: #ffffff;
+$navbar-hl: $mu-gold;
+
+// Footer
+$footer-bg: $mu-navy;
+$footer-fg: #ffffff;
+
+/*-- scss:rules --*/
+
+// Four-colour crest stripe under the navbar
+#quarto-header {
+  border-bottom: 0;
+  &::after {
+    content: "";
+    display: block;
+    height: 5px;
+    background: linear-gradient(90deg,
+      $mu-gold 0 33.33%, $mu-teal 33.33% 66.66%, $mu-maroon 66.66% 100%);
+  }
+}
+
+.navbar-logo {
+  max-height: 44px;
+  width: auto !important;
+}
+.navbar-brand.navbar-brand-logo {
+  flex-shrink: 0;
+  overflow: visible;
+}
+.navbar-title {
+  font-weight: 600;
+}
+// Small screens: keep the crest legible, shrink the title
+@media (max-width: 575.98px) {
+  .navbar-logo { max-height: 36px; }
+  .navbar-title, .navbar-brand { font-size: 1rem; white-space: normal; line-height: 1.15 !important; }
+}
+
+// Hero banner on home pages
+.mu-hero {
+  background: $mu-navy;
+  color: #ffffff;
+  padding: 3.5rem 2rem;
+  margin: 0 0 2.5rem 0;
+  border-radius: 0.5rem;
+  border-left: 8px solid $mu-gold;
+
+  h1, h2 {
+    color: #ffffff;
+    margin-top: 0;
+    border-bottom: 0;
+  }
+  p {
+    font-size: 1.15rem;
+    max-width: 48rem;
+    opacity: 0.95;
+  }
+  a.btn {
+    margin-right: 0.5rem;
+    margin-top: 0.5rem;
+  }
+}
+
+.btn-mu {
+  background: $mu-gold;
+  color: $mu-ink;
+  border: 0;
+  font-weight: 600;
+  &:hover, &:focus {
+    background: lighten($mu-gold, 8%);
+    color: $mu-ink;
+  }
+}
+.btn-mu-outline {
+  border: 2px solid #ffffff;
+  color: #ffffff;
+  font-weight: 600;
+  &:hover, &:focus {
+    background: #ffffff;
+    color: $mu-navy;
+  }
+}
+
+// Section headings on home pages
+// (Quarto puts the class on the whole <section>, so style only its heading)
+section.mu-section-title {
+  border: 0;
+  margin-top: 2.5rem;
+}
+section.mu-section-title > h2,
+h2.mu-section-title {
+  border-bottom: 3px solid $mu-gold;
+  padding-bottom: 0.3rem;
+}
+
+// Light grey band for contact / info blocks
+.mu-band {
+  background: $mu-paper;
+  padding: 1.5rem 1.75rem;
+  border-radius: 0.5rem;
+  margin: 2rem 0;
+}
+
+// Listing cards (research groups, people, projects)
+.quarto-grid-item.card {
+  border: 1px solid #e3e6ea;
+  border-top: 4px solid $mu-teal;
+  border-radius: 0.5rem;
+  transition: box-shadow 0.15s ease, transform 0.15s ease;
+  &:hover {
+    box-shadow: 0 6px 18px rgba(29, 58, 110, 0.15);
+    transform: translateY(-2px);
+  }
+  .card-title {
+    color: $mu-navy;
+    font-weight: 600;
+  }
+}
+
+// Footer
+.nav-footer {
+  font-size: 0.9rem;
+  a, .nav-link {
+    color: #ffffff !important;
+    text-decoration: underline;
+  }
+}
+
+// Visible keyboard focus (accessibility)
+a:focus-visible, .btn:focus-visible {
+  outline: 3px solid $mu-gold;
+  outline-offset: 2px;
+}

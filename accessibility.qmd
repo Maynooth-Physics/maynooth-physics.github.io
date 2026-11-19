@@ -1,0 +1,15 @@
+---
+title: "Accessibility"
+description: "Accessibility statement for this site."
+---
+
+PLACEHOLDER: replace this with an accessibility statement. Check with the university whether it has a standard statement to link to or adapt.
+
+This site aims to be usable by everyone. It is designed to:
+
+- work on phones, tablets and desktop computers
+- be navigable with a keyboard and screen reader
+- use colours with sufficient contrast
+- give images text alternatives
+
+If you have trouble using any part of this site, please contact PLACEHOLDER (email address).

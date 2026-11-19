@@ -1,0 +1,14 @@
+---
+title: "Research Groups"
+description: "Research groups in the Department of Physics."
+listing:
+  contents: groups.yml
+  type: grid
+  grid-columns: 3
+  image-height: 180px
+  fields: [image, title, description]
+  categories: true
+  sort: false
+---
+
+PLACEHOLDER: a short introduction to the department's research areas. Each group runs its own site; select a group to visit it.

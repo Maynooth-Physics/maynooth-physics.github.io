@@ -1,0 +1,18 @@
+---
+title: "About the Department"
+description: "About the Department of Physics at Maynooth University."
+---
+
+PLACEHOLDER: an overview of the department: its history, research strengths, facilities and teaching.
+
+## Research areas
+
+PLACEHOLDER: a short summary of each research area, linking to the relevant groups.
+
+## Facilities
+
+PLACEHOLDER: labs, computing resources and equipment.
+
+## Official department page
+
+For courses, admissions and staff contact details, see the [official Department of Physics page](https://www.maynoothuniversity.ie). <!-- PLACEHOLDER: replace with the exact department URL -->

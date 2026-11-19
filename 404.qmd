@@ -1,0 +1,8 @@
+---
+title: "Page not found"
+---
+
+Sorry, we couldn't find that page. It may have moved, or the address may be mistyped.
+
+[Go to the home page](https://maynooth-physics.github.io/){.btn .btn-primary}
+[See all research groups](https://maynooth-physics.github.io/groups.html){.btn .btn-outline-primary}

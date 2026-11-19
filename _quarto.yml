@@ -1,0 +1,55 @@
+project:
+  type: website
+  output-dir: _site
+  resources:
+    - assets/
+
+website:
+  title: "Department of Physics"
+  description: "Research groups and activities in the Department of Physics, Maynooth University."  # PLACEHOLDER: edit
+  site-url: https://maynooth-physics.github.io
+  favicon: assets/favicon.png
+  page-navigation: false
+  back-to-top-navigation: true
+  open-graph: true
+
+  navbar:
+    logo: assets/mu-logo-white.png
+    logo-alt: "Maynooth University crest"
+    title: "Department of Physics"
+    left:
+      - href: index.qmd
+        text: Home
+      - href: groups.qmd
+        text: Research Groups
+      - href: news.qmd
+        text: News
+      - href: about.qmd
+        text: About
+      - href: contact.qmd
+        text: Contact
+    right:
+      - icon: github
+        href: https://github.com/maynooth-physics
+        aria-label: "Department GitHub organisation"
+
+  page-footer:
+    left: |
+      © Department of Physics, Maynooth University
+    center:
+      - text: "Accessibility"
+        href: accessibility.qmd
+      - text: "Maynooth University"
+        href: https://www.maynoothuniversity.ie
+    right: |
+      Built with [Quarto](https://quarto.org)
+
+format:
+  html:
+    theme:
+      - cosmo
+      - theme/mu.scss
+    toc: false
+    lang: en-IE
+    anchor-sections: false
+    smooth-scroll: true

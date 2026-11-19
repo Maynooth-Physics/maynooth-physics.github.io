@@ -1,0 +1,20 @@
+# Research groups shown on the home page and the Research Groups page.
+#
+# To add a group: copy one block, then edit it.
+#   title:       the group's name
+#   description: one or two sentences (PLACEHOLDER text below)
+#   image:       a picture in assets/ (16:9 works best, e.g. 800x450)
+#   path:        the group's site address, i.e. https://maynooth-physics.github.io/<repo-name>/
+#   categories:  optional research-area tags, used for filtering on the Research Groups page
+
+- title: "Research Group One"
+  description: "PLACEHOLDER: one or two sentences describing what this group researches."
+  image: assets/placeholder-teal.svg
+  path: https://maynooth-physics.github.io/group-one/
+  categories: [Research area A]
+
+- title: "Research Group Two"
+  description: "PLACEHOLDER: one or two sentences describing what this group researches."
+  image: assets/placeholder-maroon.svg
+  path: https://maynooth-physics.github.io/group-two/
+  categories: [Research area B]

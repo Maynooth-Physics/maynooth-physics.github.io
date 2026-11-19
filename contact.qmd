@@ -1,0 +1,22 @@
+---
+title: "Contact"
+description: "How to contact the Department of Physics."
+---
+
+::: {.mu-band}
+**Department of Physics**<br>
+Maynooth University<br>
+Maynooth, Co. Kildare<br>
+Ireland
+
+**Email:** PLACEHOLDER (e.g. physics@example.ie)<br>
+**Phone:** PLACEHOLDER
+:::
+
+## Research group contacts
+
+Each research group lists its own contacts on its site. See [Research Groups](groups.qmd).
+
+## Finding us
+
+PLACEHOLDER: building and room details, and a link to the university campus map.

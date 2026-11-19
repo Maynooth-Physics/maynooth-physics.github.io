@@ -1,0 +1,43 @@
+---
+pagetitle: "Department of Physics | Maynooth University"
+listing:
+  - id: groups
+    contents: groups.yml
+    type: grid
+    grid-columns: 3
+    image-height: 180px
+    fields: [image, title, description]
+    sort: false
+  - id: news
+    contents: news/posts
+    type: default
+    sort: "date desc"
+    max-items: 3
+    fields: [date, title, description]
+    feed: false
+---
+
+::: {.mu-hero}
+## Physics research at Maynooth University
+
+PLACEHOLDER: two or three sentences introducing the department and its research. What do you study, and who should get in touch?
+
+[Our research groups](groups.qmd){.btn .btn-mu}
+[Contact us](contact.qmd){.btn .btn-mu-outline}
+:::
+
+## Research groups {.mu-section-title}
+
+::: {#groups}
+:::
+
+## Latest news {.mu-section-title}
+
+::: {#news}
+:::
+
+[All news →](news.qmd)
+
+::: {.mu-band}
+**Get in touch.** PLACEHOLDER: a short line with a general contact email, e.g. physics@example.ie. [Contact details](contact.qmd)
+:::

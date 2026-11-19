@@ -1,0 +1,11 @@
+---
+title: "News"
+description: "News and events from the Department of Physics."
+listing:
+  contents: news/posts
+  type: default
+  sort: "date desc"
+  fields: [date, title, description, categories]
+  categories: true
+  feed: true
+---

@@ -1,0 +1,10 @@
+---
+title: "Welcome to the new research site"
+description: "PLACEHOLDER: a one-line summary shown in news listings."
+date: 2026-11-19
+categories: [Department]
+---
+
+PLACEHOLDER: the body of the news item.
+
+To add a news item, copy this folder, rename it as `YYYY-MM-DD-short-title`, and edit `index.qmd`. Put any images for the item in the same folder.
